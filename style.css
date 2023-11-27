@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+h1 {
+  width: 450px;
+  height: 250px;
+  box-shadow: 0 5px 15px rgba(14, 10, 10, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  overflow-y:auto;
+  color:teal;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  gap:1rem;
+}
+
+form input {
+  padding: 10px;
+  border-radius: 25px;
+  padding-left: 10px;
+  outline-color: Teal;
+  border: 1px solid teal;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+
+form button {
+  padding: 10px 20px;
+  border: 1px solid teal;
+  color: teal;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: teal;
+  color:#fff;
+  cursor: pointer;
+}
