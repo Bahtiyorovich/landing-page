@@ -1,10 +1,8 @@
 const heading = document.querySelector('h1')
 const form = document.querySelector('form')
 
-
 const data = JSON.parse(localStorage.getItem('text')) || [];
 console.log(data)
-
 
 data.map(item => {
   heading.innerHTML += `
@@ -26,7 +24,6 @@ form.addEventListener('submit', (e)=> {
     info[key] = value
     data.push(info)
   })
-
 
   localStorage.setItem('text', JSON.stringify(data))
 
